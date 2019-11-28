@@ -21,8 +21,8 @@ class Squirrel(models.Model):
     SHIFT_CHOICES = (
             (PM, 'PM'),
             (AM, 'AM'),
-    )  
-    
+    )
+
     Shift = models.CharField(
             help_text=_('Shift'),
             max_length = 5,
@@ -161,14 +161,14 @@ class Squirrel(models.Model):
             max_length = 20,
             choices = TF_CHOICES,
     )
-  
+
 
     approaches = models.CharField(
             help_text = _('Approaches'),
             max_length = 20,
             choices = TF_CHOICES,
     )
-    
+
     indifferent = models.CharField(
             help_text = _('Indifferent'),
             max_length = 20,
@@ -181,4 +181,6 @@ class Squirrel(models.Model):
             choices = TF_CHOICES,
     )
 
-
+    new = models.CharField(
+            help_text = _('testing'),
+    )
