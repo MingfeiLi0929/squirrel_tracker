@@ -181,4 +181,8 @@ class Squirrel(models.Model):
             choices = TF_CHOICES,
     )
 
-    this_is_new = 'NEW'
+
+    new = models.CharField(
+            help_text = _('testing'),
+    )
+
